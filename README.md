@@ -44,7 +44,10 @@
 - [twitter](http://github.com/hookio/twitter): Wrapper to Twitter API
 - [webhook](http://github.com/hookio/webhook): Emits received HTTP requests as hook.io events (with optional JSON-RPC 1.0 Support)
 - [wget](http://github.com/scottyapp/hook.io-wget): Downloads files using HTTP. Based on the http-get module by Stefan Rusu
- 
+- [tar] (https://github.com/scottyapp/hook.io.tar): A hook to wrap around tar
+- [gzbz2] (https://github.com/scottyapp/hook.io-gzbz2): A hook for compressing and uncompressing files
+- [mock] (https://github.com/scottyapp/hook.io-mock): A hook that mocks messages. Useful for hook.io related development. 
+
 # Getting Start / Demo
 
      npm install hook.io-helloworld -g
@@ -55,11 +58,17 @@ Now run:
      
 Spawn up as many as you want. The first one becomes a server, the rest will become clients. Each helloworld hook emits a hello on an interval. Now watch the i/o party go!     
 
+# Conventions
+
+- Name your projects hook.io-XXX on github and npm
+- Ensure that your package.json contains the keywords section with "hook.io" as a keyword for automated discovery
+- Follow the one hook per npm/github project rule and focus on one task only
+- Document your messages
 
 # Blog Posts
 
-hook.io for dummies: [http://ejeklint.github.com/2011/09/23/hook.io-for-dummies-part-1-overview/](http://ejeklint.github.com/2011/09/23/hook.io-for-dummies-part-1-overview/)
-Distribute Node.js Apps with hook.io: [http://blog.nodejitsu.com/distribute-nodejs-apps-with-hookio][6]
+- hook.io for dummies: [http://ejeklint.github.com/2011/09/23/hook.io-for-dummies-part-1-overview/](http://ejeklint.github.com/2011/09/23/hook.io-for-dummies-part-1-overview/)
+- Distribute Node.js Apps with hook.io: [http://blog.nodejitsu.com/distribute-nodejs-apps-with-hookio][6]
 
 ## Tests
 
